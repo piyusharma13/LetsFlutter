@@ -2,11 +2,23 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
-        backgroundColor: Color.fromARGB(255, 255, 255, 100),
-        body: Center(
-          child: Text("Piyush Sharma", style: TextStyle(color: Colors.brown, fontSize: 20.0),),
+        body: Container(
+          decoration: const BoxDecoration(
+              gradient: LinearGradient(colors: [
+            Color.fromARGB(255, 34, 2, 89),
+            Color.fromARGB(255, 178, 150, 226)
+          ], 
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter
+          )),
+          child: const Center(
+            child: Text(
+              "Piyush Sharma",
+              style: TextStyle(color: Colors.white, fontSize: 40.0),
+            ),
+          ),
         ),
       ),
     ),
